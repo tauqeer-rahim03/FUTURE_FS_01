@@ -1,58 +1,77 @@
-import { Github, Linkedin } from "lucide-react";
 import React from "react";
+import { Linkedin, Github, Download } from "lucide-react";
+
+const PROFILE_IMAGE_URL = "/profile-image.jpg";
+const CV_URL = "/Tauqeer_Rahim_CV.pdf";
+const LINKEDIN_URL = "https://www.linkedin.com/in/tauqeer-rahim";
+const GITHUB_URL = "https://github.com/tauqeer-rahim03";
 
 const HeroSection = () => {
     return (
-        <div
-            id="hero-section"
-            className="mx-auto h-screen"
-            style={{ height: "80vh" }}
+        <section
+            id="home"
+            className="h-screen flex items-center justify-center text-center md:text-left"
         >
-            <div className="flex flex-col justify-center items-center gap-20 h-full lg:flex-row">
-                <div>
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 px-4">
+                <div className="w-64 h-64 md:w-80 md:h-80 flex-shrink-0">
                     <img
-                        className="rounded-full w-80 lg:w-100"
-                        src="/profile-image.jpg"
-                        alt="Profile"
+                        src={PROFILE_IMAGE_URL}
+                        alt="A picture of Tauqeer Rahim"
+                        className="w-full h-full rounded-full object-cover shadow-lg"
                     />
                 </div>
-                <div className="align-middle text-center w-fit">
-                    <p className="font-semibold text-gray-500 text-2xl">
-                        Hello I'm
+
+                <div className="flex flex-col items-center md:items-start">
+                    <p className="font-semibold text-gray-500 text-lg">
+                        Hello, I'm
                     </p>
-                    <h1 className="text-6xl font-semibold mb-6">
+                    <h1 className="text-5xl md:text-6xl font-bold mt-1 text-black">
                         Tauqeer Rahim
                     </h1>
-                    <h2 className="text-4xl text-gray-500 font-semibold text-nowrap mb-4">
+                    <p className="text-2xl font-medium mt-2 text-gray-700">
                         Front End Developer
-                    </h2>
-                    <div className="flex flex-row justify-center items-center gap-4 ">
-                        <button className="border-1 rounded-full px-6 py-2 mt-4 text-lg font-semibold hover:bg-black hover:text-white transition duration-200 cursor-pointer">
-                            Download CV
-                        </button>
-                        <button className="border-1 rounded-full px-6 py-2 mt-4 text-lg text-white font-semibold bg-black cursor-pointer">
-                            Contact Info
-                        </button>
-                    </div>
-                    <div className="flex flex-row justify-center items-center gap-4 mt-4 text-2xl">
+                    </p>
+
+                    <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
                         <a
-                            href="https://www.linkedin.com/in/tauqeer-rahim"
-                            target="_blank"
-                            className=" bg-black text-white rounded-full p-2"
+                            href={CV_URL}
+                            download="Tauqeer_Rahim_CV.pdf"
+                            className="flex items-center gap-2 bg-white border border-black text-black font-semibold py-2 px-6 rounded-full transition-all hover:bg-black hover:text-white hover:shadow-md"
                         >
-                            <Linkedin />
+                            <Download size={20} />
+                            Download CV
                         </a>
                         <a
-                            href="https://github.com/tauqeer-rahim03"
-                            target="_blank"
-                            className=" bg-black text-white rounded-full p-2"
+                            href="#contact"
+                            className="bg-black text-white font-semibold py-2 px-6 rounded-full transition-all hover:shadow-md "
                         >
-                            <Github />
+                            Contact Info
+                        </a>
+                    </div>
+
+                    <div className="flex justify-center md:justify-start gap-4 mt-6">
+                        <a
+                            href={LINKEDIN_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn Profile"
+                            className="text-gray-600 transition-transform hover:text-gray-900 hover:scale-110"
+                        >
+                            <Linkedin size={32} />
+                        </a>
+                        <a
+                            href={GITHUB_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub Profile"
+                            className="text-gray-600 transition-transform hover:text-gray-900 hover:scale-110"
+                        >
+                            <Github size={32} />
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
