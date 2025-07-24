@@ -36,7 +36,7 @@ const HeroSection = () => {
                         <a
                             href={CV_URL}
                             download="Tauqeer_Rahim_CV.pdf"
-                            className="flex items-center gap-2 bg-white border border-black text-black font-semibold py-2 px-6 rounded-full transition-all hover:bg-black hover:text-white hover:shadow-md"
+                            className="flex items-center gap-2 border border-gray-300 text-black font-semibold py-2 px-6 rounded-full transition-all hover:bg-black hover:text-white hover:shadow-md"
                         >
                             <Download size={20} />
                             Download CV

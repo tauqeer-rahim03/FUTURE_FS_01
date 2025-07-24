@@ -33,7 +33,7 @@ const skillCategories = [
 
 const ExperienceSection = () => {
     return (
-        <section id="experience" className="py-24 bg-white">
+        <section id="experience" className="py-24">
             <div className="container mx-auto px-4 text-center">
                 <p className="font-semibold text-gray-500">Explore My</p>
                 <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-12">
@@ -49,7 +49,7 @@ const ExperienceSection = () => {
                             <h3 className="text-2xl font-bold mb-8 text-gray-800">
                                 {category.title}
                             </h3>
-                            <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-left">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 text-left">
                                 {category.skills.map((skill, skillIndex) => (
                                     <article
                                         key={skillIndex}

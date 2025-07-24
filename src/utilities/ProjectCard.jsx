@@ -3,7 +3,7 @@ import { Github } from "lucide-react";
 
 const ProjectCard = ({ imageUrl, title, githubUrl, demoUrl }) => {
     return (
-        <div className="border border-black rounded-3xl p-6 text-center bg-white shadow-sm transition-all hover:shadow-lg">
+        <div className="border border-gray-300 rounded-3xl p-6 text-center shadow-sm transition-all hover:shadow-lg">
             <div className="w-full h-48 mb-6 rounded-2xl overflow-hidden">
                 <img
                     src={imageUrl}
@@ -17,7 +17,7 @@ const ProjectCard = ({ imageUrl, title, githubUrl, demoUrl }) => {
                     href={githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-white border border-gray-400 text-gray-800 font-semibold py-2 px-5 rounded-full transition-all hover:bg-black hover:text-white"
+                    className="flex items-center gap-2 border border-gray-400 text-gray-800 font-semibold py-2 px-5 rounded-full transition-all hover:bg-black hover:text-white"
                 >
                     <Github size={20} />
                     GitHub

@@ -42,7 +42,7 @@ const AboutSection = () => {
                 ))}
             </div>
 
-            <div className="max-w-4xl w-full mx-auto mt-8 text-center text-black p-6 border border-black rounded-3xl">
+            <div className="max-w-4xl w-full mx-auto mt-8 text-center text-black p-6 border border-gray-300 rounded-3xl">
                 <p>
                     A Front-End Developer who turns complex challenges into
                     beautiful user experiences. My curiosity for technology,
