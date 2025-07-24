@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import ExperienceSection from "./components/ExperienceSection";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Navbar />
             <HeroSection />
             <AboutSection />
+            <ExperienceSection />
             <ProjectSection />
             <ContactSection />
             <Footer />
