@@ -29,7 +29,7 @@ const AboutSection = () => {
     return (
         <section
             id="about"
-            className="h-screen flex flex-col justify-center items-center container mx-auto px-4 text-center"
+            className="min-h-screen flex flex-col justify-center items-center container mx-auto px-4 text-center"
         >
             <p className="font-semibold text-gray-500">Get To Know More</p>
             <h1 className="text-4xl md:text-5xl font-bold mt-2">About Me</h1>
