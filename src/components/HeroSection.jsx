@@ -13,14 +13,6 @@ const HeroSection = () => {
             className="min-h-screen flex items-center justify-center text-center md:text-left pt-20"
         >
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 px-4">
-                <div className="w-64 h-64 md:w-80 md:h-80 flex-shrink-0">
-                    <img
-                        src={PROFILE_IMAGE_URL}
-                        alt="A picture of Tauqeer Rahim"
-                        className="w-full h-full rounded-full object-cover shadow-lg"
-                    />
-                </div>
-
                 <div className="flex flex-col items-center md:items-start">
                     <p className="font-semibold text-gray-500 text-lg">
                         Hello, I'm
