@@ -33,7 +33,7 @@ const ContactSection = () => {
                     Contact Me
                 </h1>
 
-                <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-2xl mx-auto">
+                <div className="text-nowrap flex flex-col md:flex-row justify-center items-center gap-8 max-w-2xl mx-auto">
                     {contactDetails.map((contact, index) => (
                         <a
                             key={index}

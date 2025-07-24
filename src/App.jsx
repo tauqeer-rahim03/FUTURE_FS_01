@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <AboutSection />
             <ProjectSection />
             <ContactSection />
+            <Footer />
         </>
     );
 };
