@@ -12,7 +12,7 @@ This is a **responsive** and **minimalist** portfolio website built using **Reac
 
 ## 🚀 Live Demo
 
-[View Live Site](https://your-live-portfolio-url.com) <!-- Replace with your actual live link -->
+[View Live Site](https://future-fs-01-flame.vercel.app/)
 
 ## 🛠️ Technologies Used
 
